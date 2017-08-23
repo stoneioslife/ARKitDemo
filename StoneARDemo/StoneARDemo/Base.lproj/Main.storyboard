@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="StoneARDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wlb-hA-4Oh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-2c-6wj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbK-ZQ-JIt">
+                                <rect key="frame" x="125" y="20" width="125" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="F0f-ok-Cmh"/>
+                                    <constraint firstAttribute="width" constant="125" id="abv-h4-Bpd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wbK-ZQ-JIt" firstAttribute="top" secondItem="3mE-7S-LvB" secondAttribute="top" id="Ezc-WC-9ex"/>
+                            <constraint firstItem="sIR-2c-6wj" firstAttribute="top" secondItem="wlb-hA-4Oh" secondAttribute="top" id="GlG-OM-GFa"/>
+                            <constraint firstItem="sIR-2c-6wj" firstAttribute="trailing" secondItem="3mE-7S-LvB" secondAttribute="trailing" id="Ocy-Zc-JMW"/>
+                            <constraint firstItem="sIR-2c-6wj" firstAttribute="leading" secondItem="3mE-7S-LvB" secondAttribute="leading" id="gwq-TI-7rc"/>
+                            <constraint firstItem="sIR-2c-6wj" firstAttribute="bottom" secondItem="3mE-7S-LvB" secondAttribute="bottom" id="nTy-CT-hMW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3mE-7S-LvB"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="wbK-ZQ-JIt" id="UA6-jo-aQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+</document>
