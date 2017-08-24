@@ -28,6 +28,11 @@
 		8E35444A1F4D116C00599FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E35444C1F4D116C00599FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E3544521F4D16CC00599FF0 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
+		8E9BBD4A1F4EBB87008AEA5D /* explosion.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = explosion.scnp; sourceTree = "<group>"; };
+		8E9BBD4B1F4EBB99008AEA5D /* collision.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = collision.mp3; sourceTree = "<group>"; };
+		8E9BBD4C1F4EBB99008AEA5D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		8E9BBD4D1F4EBB99008AEA5D /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		8E9BBD4E1F4EBB99008AEA5D /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
 		8EC3D2BF1F4D78FE00AEBE6B /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ship.swift; path = art.scnassets/Ship.swift; sourceTree = "<group>"; };
 		8EC3D2C11F4D7CA700AEBE6B /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +67,12 @@
 		8E35443D1F4D116C00599FF0 /* StoneARDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8E9BBD4B1F4EBB99008AEA5D /* collision.mp3 */,
+				8E9BBD4D1F4EBB99008AEA5D /* explosion.mp3 */,
+				8E9BBD4C1F4EBB99008AEA5D /* spark.png */,
+				8E9BBD4E1F4EBB99008AEA5D /* torpedo.mp3 */,
 				8E35443E1F4D116C00599FF0 /* AppDelegate.swift */,
+				8E9BBD4A1F4EBB87008AEA5D /* explosion.scnp */,
 				8E3544401F4D116C00599FF0 /* art.scnassets */,
 				8E3544421F4D116C00599FF0 /* ViewController.swift */,
 				8E3544441F4D116C00599FF0 /* Main.storyboard */,

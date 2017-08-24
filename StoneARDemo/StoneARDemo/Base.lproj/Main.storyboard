@@ -17,9 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-2c-6wj">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTS-gz-BJG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </sceneKitView>
+                            </arscnView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbK-ZQ-JIt">
                                 <rect key="frame" x="125" y="20" width="125" height="35"/>
                                 <constraints>
@@ -33,15 +33,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RTS-gz-BJG" firstAttribute="top" secondItem="wlb-hA-4Oh" secondAttribute="top" id="CHi-pL-Tsi"/>
                             <constraint firstItem="wbK-ZQ-JIt" firstAttribute="top" secondItem="3mE-7S-LvB" secondAttribute="top" id="Ezc-WC-9ex"/>
-                            <constraint firstItem="sIR-2c-6wj" firstAttribute="top" secondItem="wlb-hA-4Oh" secondAttribute="top" id="GlG-OM-GFa"/>
-                            <constraint firstItem="sIR-2c-6wj" firstAttribute="trailing" secondItem="3mE-7S-LvB" secondAttribute="trailing" id="Ocy-Zc-JMW"/>
-                            <constraint firstItem="sIR-2c-6wj" firstAttribute="leading" secondItem="3mE-7S-LvB" secondAttribute="leading" id="gwq-TI-7rc"/>
-                            <constraint firstItem="sIR-2c-6wj" firstAttribute="bottom" secondItem="3mE-7S-LvB" secondAttribute="bottom" id="nTy-CT-hMW"/>
+                            <constraint firstItem="RTS-gz-BJG" firstAttribute="bottom" secondItem="3mE-7S-LvB" secondAttribute="bottom" id="UTc-qT-t2G"/>
+                            <constraint firstItem="RTS-gz-BJG" firstAttribute="trailing" secondItem="3mE-7S-LvB" secondAttribute="trailing" id="czL-0S-58l"/>
+                            <constraint firstItem="RTS-gz-BJG" firstAttribute="leading" secondItem="3mE-7S-LvB" secondAttribute="leading" id="e8P-F0-A1w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3mE-7S-LvB"/>
                     </view>
                     <connections>
+                        <outlet property="sceneView" destination="RTS-gz-BJG" id="hA9-nF-fPY"/>
                         <outlet property="scoreLabel" destination="wbK-ZQ-JIt" id="UA6-jo-aQr"/>
                     </connections>
                 </viewController>
